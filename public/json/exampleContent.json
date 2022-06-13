@@ -1,0 +1,70 @@
+[
+
+    {
+      "index":"1F","title": "进口·生鲜",
+      "mores": ["进口咖啡","进口酒","进口母婴","新鲜蔬菜","新鲜水果"],
+      "left_img": "/images/fre_r.jpg", "bg": "#a6e5be",
+      "text": ["进口水果","奇异果","西柚","海鲜水产","品质牛肉","奶粉","鲜活禽蛋","进口酒","进口奶粉","鲜活禽蛋"],
+      "g_mod": [
+        {
+          "up": {"title": "草莓先生&蓝莓小姐", "price": 98, "img": "/images/fre_1.jpg","pid": 111},
+          "down": {"title": "新鲜美味 进口美食", "price": 24, "img": "/images/fre_4.jpg", "pid": 121}
+        },
+        {
+          "up": {"title": "智利进口绿奇异果", "price": 84, "img": "/images/fre_2.jpg","pid": 112},
+          "down": {"title": "新鲜美味 纯牛奶", "price": 142, "img": "/images/fre_5.jpg","pid": 122}
+        },
+        {
+          "up": {"title": "贝斯克 草莓先生&蓝莓小姐", "price": 98, "img": "/images/fre_3.jpg","pid": 113},
+          "down":{"title": "莫斯利安", "price": 62, "img": "/images/fre_6.jpg","pid": 123}
+        }
+      ],
+      "right_img": ["/images/fre_b1.jpg","/images/fre_b2.jpg"]
+    },
+
+    {
+      "index":"2F","title": "母婴玩具",
+      "mores": ["洗发护发","面膜","洗面奶","香水","沐浴露"],
+      "left_img": "/images/make_r.jpg", "bg": "#fabeb8",
+      "text": ["孕妈必备","儿童玩具","童装童鞋","辅助食品","奶粉","鲜活蛋禽","维生素","童装童鞋","辅助食品"],
+      "g_mod":
+      [
+        {
+          "up":{"title": "美宝莲粉饼", "price": 260, "img": "/images/make_1.jpg","pid": 211},
+          "down":{"title": "男士洗发水", "price": 120, "img": "/images/make_4.jpg","pid": 221}
+        },
+        {
+          "up": {"title": "洗衣液", "price": 60, "img": "/images/make_2.jpg","pid": 212},
+          "down":{"title": "美宝莲粉饼", "price": 260, "img": "/images/make_5.jpg","pid": 222}
+        },
+        {
+          "up":{"title": "洗发水", "price": 160, "img": "/images/make_3.jpg","pid": 213},
+          "down":{"title": "男士设计 洗面奶", "price": 90, "img": "/images/make_6.jpg","pid": 223}
+        }
+      ],
+      "right_img": ["/images/make_b1.jpg","/images/make_b2.jpg"]
+    },
+
+    {
+      "index":"3F","title": "进口·生鲜",
+      "mores": ["营养品","孕妈背带裤","儿童玩具","婴儿床","喂奶器"],
+      "left_img": "/images/baby_r.jpg", "bg": "#f4bdd5",
+      "text": ["进口水果","奇异果","西柚","海鲜水产","品质牛肉","奶粉","鲜活禽蛋","进口酒","进口奶粉","鲜活禽蛋"],
+      "g_mod":
+      [
+        {
+        "up":{"title": "儿童推车", "price": 560, "img": "/images/baby_1.jpg","pid": 311},
+        "down":{"title": "纸尿裤", "price": 260, "img": "/images/baby_4.jpg","pid": 321}
+        },
+        {
+          "up": {"title": "妈咪纸尿裤", "price": 260, "img": "/images/baby_2.jpg","pid": 312},
+          "down": {"title": "儿童推车", "price": 86, "img": "/images/baby_5.jpg","pid": 322}
+        },
+        {
+        "up":{"title": "儿童玩具 挖掘机", "price": 160, "img": "/images/baby_3.jpg","pid": 313},
+        "down":{"title": "奶粉", "price": 660, "img": "/images/baby_6.jpg","pid": 323}
+        }
+      ],
+      "right_img": ["/images/baby_b1.jpg","/images/baby_b2.jpg"]
+    }
+]

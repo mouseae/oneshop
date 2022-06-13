@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+
+}
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.f_red {
+    color: #ff4e00!important;
+}
+.act_red a:hover {
+    color: #ff3c3c!important;
+}
+.v_line {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 12px 10px 0;
+}
