@@ -4,7 +4,7 @@
     <el-row type="flex" justify="center">
 <!--      <el-col :xs="24" :sm="23" :md="22" :lg="18" :xl="16">-->
       <el-col class="w">
-        <header-search/>
+        <header-search @search="search"/>
         <goods-menu/>
         <hot-content/>
         <img src="/images/mban_2.jpg" style="width: 100%;margin-top: 20px;">
@@ -36,6 +36,18 @@ export default {
     endFooter,
     exampleContent
   },
+  methods:{
+    search(sech) {
+      if (sech !== "") {
+        this.$router.replace({
+          path: '/search',
+          query:{
+            sech:sech
+          }
+        })
+      }
+    }
+  }
 }
 </script>
 

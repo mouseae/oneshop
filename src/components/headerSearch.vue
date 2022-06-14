@@ -4,10 +4,13 @@
       <h1><router-link to="/oneShop" title="1号店"></router-link></h1>
     </div>
     <div class="main">
-      <div class="search">
-        <input type="search" placeholder="请输入关键字">
-        <button>搜索</button>
-      </div>
+
+        <div class="search">
+          <input v-on:keyup.enter="search" v-model="sech" type="search" placeholder="请输入关键字">
+          <button @click="$emit('search',sech)">搜索</button>
+        </div>
+
+
       <div class="hot_words">
         <a class="f_red" href="#">咖啡</a>
         <a href="#">iPhone 6s</a>
@@ -23,8 +26,19 @@
 </template>
 
 <script>
+// import axios from "axios";
+
 export default {
-  name: "headerSearch"
+  name: "headerSearch",
+  data() {
+    return {
+      sech:"",
+      // data:[]
+    }
+  },
+  methods:{
+
+  },
 }
 </script>
 

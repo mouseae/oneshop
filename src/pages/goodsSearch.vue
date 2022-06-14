@@ -3,7 +3,7 @@
     <nav-bar/>
     <!--        表头-->
     <div class="w">
-      <header-search/>
+      <header-search @search="search"/>
       <el-header :height="47+'px'" style="border-bottom: 2px solid #ff3c3c;padding: 0;">
         <div class="nav_items act_red" style="display: flex;justify-content: space-between;width: 100%">
           <ul>
@@ -183,12 +183,48 @@
         array:[]
       }
     },
-    mounted() {
-      // 通过axios异步获取json数据
-      axios.get("/json/goodsSearch.json").then(a=>{
-        this.array = a.data;
-      });
+    methods:{
+
+      search(sech) {
+        console.log(sech)
+        if (sech !== "") {
+          axios.get("/json/product.json").then(a=>{
+            let data = [];
+            for(let pro of a.data){
+              if(pro.title.includes(sech)){
+                data.push(pro)
+              }
+            }
+            this.array = data;
+          });
+        }else {
+          axios.get("/json/goodsSearch.json").then(a=>{
+            this.array = a.data;
+          });
+        }
+      }
     },
+    mounted() {
+      console.log(this.$route.query.data)
+      let sech = this.$route.query.sech
+      console.log("sech,"+sech)
+      if (sech == undefined) {
+
+        axios.get("/json/goodsSearch.json").then(a=>{
+          this.array = a.data;
+        });
+      }else {
+        axios.get("/json/product.json").then(a=>{
+          let data = [];
+          for(let pro of a.data){
+            if(pro.title.includes(sech)){
+              data.push(pro)
+            }
+          }
+          this.array = data;
+        });
+      }
+    }
   }
 </script>
 
