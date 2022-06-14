@@ -56,7 +56,7 @@ export default {
       array: []
     }
   },
-  created() {
+  mounted() {
     // 通过axios异步获取json数据
     axios.get("/json/hotContent.json").then(a=>{
       this.array = a.data;

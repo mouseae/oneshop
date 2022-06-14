@@ -4,6 +4,7 @@ import oneShop from "@/pages/oneShop";
 import logIn from "@/pages/logIn";
 import accountRegistration from "@/pages/accountRegistration";
 import productDetails from "@/pages/productDetails";
+import goodsSearch from "@/pages/goodsSearch";
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,10 @@ export default new VueRouter({
                 keepAlive: true,
                 scrollTop: 0,
             },
+        },
+        {
+            path:'/search',
+            component:goodsSearch
         }
     ]
 })
