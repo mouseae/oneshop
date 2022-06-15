@@ -186,7 +186,7 @@
     methods:{
 
       search(sech) {
-        console.log(sech)
+        // console.log(sech)
         if (sech !== "") {
           axios.get("/json/product.json").then(a=>{
             let data = [];
@@ -205,11 +205,10 @@
       }
     },
     mounted() {
-      console.log(this.$route.query.data)
+      // console.log(this.$route.query.data)
       let sech = this.$route.query.sech
       console.log("sech,"+sech)
-      if (sech == undefined) {
-
+      if (sech == null) {
         axios.get("/json/goodsSearch.json").then(a=>{
           this.array = a.data;
         });

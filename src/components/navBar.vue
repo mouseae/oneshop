@@ -5,7 +5,7 @@
     </div>
     <div class="fr">
       <ul>
-        <li class="act_red">你好&nbsp;<router-link to="/login">{{ username }}&nbsp;</router-link></li>
+        <li class="act_red">你好&nbsp;<router-link to="/login"><span>{{ username }}</span>&nbsp;</router-link></li>
         <li><router-link v-show="isSuc" class="f_red" to="/registration">免费注册</router-link></li>
         <li class="v_line"></li>
         <li>我的订单</li>
@@ -37,8 +37,8 @@ export default {
     }
   },
   mounted() {
-    this.username="请登录";
-    if (this.username) {
+    if (sessionStorage.username) {
+      // console.log(999)
       this.isSrc=false
       this.username = sessionStorage.username;
     }

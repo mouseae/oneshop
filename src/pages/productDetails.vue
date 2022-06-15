@@ -148,13 +148,13 @@ export default {
   mounted() {
     let pid = this.$route.query.pid;
     axios.get("/json/product.json").then(g=>{
-      console.log(666)
+      // console.log(666)
       for(let pro of g.data){
         if(pro.pid == Number(pid)){
           this.pro = pro;
         }
       }
-      console.log(this.pro)
+      // console.log(this.pro)
     });
   }
 }
