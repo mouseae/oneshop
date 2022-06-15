@@ -1,24 +1,10 @@
 # oneshop
 
-## Project setup
-```
-npm install
-```
+已完成登录，注册功能
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+首页的商品可以跳转到详情页面
 
-### Compiles and minifies for production
-```
-npm run build
-```
+`product.json`里的数据可以按照title搜索
 
-### Lints and fixes files
-```
-npm run lint
-```
+[线上地址](https://oneshop-ten.vercel.app)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
