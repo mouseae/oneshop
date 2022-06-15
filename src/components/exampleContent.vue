@@ -175,7 +175,7 @@ export default {
   font-size: 12px;
   margin: 0 15px 0 15px;
 }
-.left_img {
+.left_img img {
   height: 286px;
   width: 211px;
 }
